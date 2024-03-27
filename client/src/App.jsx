@@ -10,7 +10,7 @@ import PlacePage from "./pages/placePage"
 import PlacesFormPage from "./pages/placesFormPage"
 import SinglePlacePage from "./pages/SinglePlacePage"
 import Bookings  from "./pages/Bookings"
-axios.defaults.baseURL='http://localhost:4000/api/v1';
+axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
 axios.defaults.withCredentials=true;
 axios.defaults.headers={
   'content-Type':'application/json','SameSite':'none','secure':false
