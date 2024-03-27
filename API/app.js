@@ -30,7 +30,7 @@ app.use(cookieParser());
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:5173",
+    origin: "https://airdrop-clone.netlify.app",
   })
 );
 app.use("/api/v1/user", userAuth);
