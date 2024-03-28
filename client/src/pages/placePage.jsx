@@ -27,7 +27,7 @@ export default function PlacePage() {
                 {placeData.length>0 && placeData.map((place)=>(
                     <div key={place._id}className="mt-2 bg-gray-100 flex gap-2">
                         <div className="flex h-32 w-32 bg-gray-300 grow shrink-0 p-2">
-                            {place.photos.length>0 &&(<img className="object-cover" src={`http://localhost:4000/uploads/${place.photos[0]}`} alt="" />
+                            {place.photos.length > 0 && (<img className="object-cover" src={`${import.meta.env.VITE_APP_BASE_URL}/uploads/${place.photos[0]}`} alt="" />
                         )}
                             </div>
                         

@@ -11,6 +11,7 @@ import PlacesFormPage from "./pages/placesFormPage"
 import SinglePlacePage from "./pages/SinglePlacePage"
 import Bookings  from "./pages/Bookings"
 axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
+
 axios.defaults.withCredentials=true;
 axios.defaults.headers={
   'content-Type':'application/json','SameSite':'none','secure':false

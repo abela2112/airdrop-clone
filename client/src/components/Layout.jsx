@@ -3,7 +3,7 @@ import Header from "./Header";
 
 export default function Layout(){
     return(
-        <div className=" flex flex-col min-h-screen">
+        <div className="md:container md:mx-auto flex flex-col min-h-screen">
         <Header/>
         <Outlet/>
         </div>

@@ -32,6 +32,7 @@ app.use(
     credentials: true,
     origin: "https://airdrop-clone.netlify.app",
   })
+  //
 );
 app.use("/api/v1/user", userAuth);
 app.use("/api/v1/account", profile);
